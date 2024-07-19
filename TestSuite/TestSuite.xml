@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="POMPractice">
+    <listeners>
+        <listener class-name="commonUtilities.Listeners"></listener>
+    </listeners>
+    <test name="SubmitOrder">
+        <classes>
+            <class name="tests.POMBasedEndToEndOrderPlace"/>
+        </classes>
+    </test>
+    <test name="ErrorValidation">
+        <classes>
+            <class name="tests.ErrorValidationTest"/>
+        </classes>
+    </test>
+</suite>

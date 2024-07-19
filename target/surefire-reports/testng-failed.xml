@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [POMPractice]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="commonUtilities.Listeners"/>
+  </listeners>
+  <test thread-count="5" parallel="tests" name="SubmitOrder(failed)" verbose="0">
+    <classes>
+      <class name="tests.POMBasedEndToEndOrderPlace">
+        <methods>
+          <include name="placeOrder" invocation-numbers="0"/>
+          <include name="launchApp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- tests.POMBasedEndToEndOrderPlace -->
+    </classes>
+  </test> <!-- SubmitOrder(failed) -->
+</suite> <!-- Failed suite [POMPractice] -->
